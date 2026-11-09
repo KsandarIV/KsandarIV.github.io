@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aleksandar Savov · Portfolio</title>
+<meta name="description" content="Aleksandar Savov, Junior Data Analyst: studente ITS in Data Science e IA. Progetti, competenze e contatti.">
+<style>
+  :root { --ink: #1d2328; --muted: #52606b; --accent: #0f3b57; --soft: #e8eff4; --bg: #ffffff; --card: #f7f9fb; --line: #d6dee5; }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink: #e6ebef; --muted: #a7b3bd; --accent: #8cc0e3; --soft: #1b2a35; --bg: #11161a; --card: #182027; --line: #2a3640; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font-family: "Segoe UI", system-ui, -apple-system, Arial, sans-serif; line-height: 1.55; }
+  main { max-width: 820px; margin: 0 auto; padding: 48px 16px 64px; }
+  h1 { font-size: clamp(2rem, 6vw, 2.8rem); margin: 0; color: var(--accent); letter-spacing: .5px; }
+  .role { font-size: 1.1rem; font-weight: 600; margin: 4px 0 10px; }
+  .contacts a { color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--line); }
+  .contacts { color: var(--muted); }
+  h2 { font-size: .95rem; text-transform: uppercase; letter-spacing: 1.5px; color: var(--accent); border-bottom: 1.5px solid var(--accent); padding-bottom: 4px; margin: 40px 0 14px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 16px 18px; margin-bottom: 14px; }
+  .card h3 { margin: 0 0 2px; font-size: 1.08rem; }
+  .card .meta { color: var(--muted); font-size: .9rem; margin-bottom: 8px; }
+  .card ul { margin: 6px 0 8px 18px; padding: 0; }
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+  .tags span { background: var(--soft); color: var(--accent); border-radius: 999px; padding: 2px 10px; font-size: .82rem; }
+  .card a.repo { color: var(--accent); font-weight: 600; text-decoration: none; }
+  .highlight { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; }
+  .highlight div { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 14px; }
+  .highlight b { display: block; font-size: 1.5rem; color: var(--accent); }
+  dl { margin: 0; } dt { font-weight: 600; } dd { margin: 0 0 8px; color: var(--muted); }
+  footer { margin-top: 48px; color: var(--muted); font-size: .85rem; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Aleksandar Savov</h1>
+    <div class="role">Junior Data Analyst · Python · SQL · IA generativa (RAG)</div>
+    <div class="contacts">Roma · <a href="mailto:aleksandar_savov@yahoo.com">aleksandar_savov@yahoo.com</a> · <a href="https://github.com/KsandarIV">github.com/KsandarIV</a></div>
+  </header>
+
+  <h2>Profilo</h2>
+  <p>Studente ITS in Data Science e Intelligenza Artificiale, con quattro anni di studi in filosofia e tre anni di lavoro operativo. Il mio metodo è lo stesso ovunque: scompongo il processo, trovo il collo di bottiglia e introduco un sistema semplice che renda il team autonomo. Cerco uno stage in cui applicare analisi dei dati, machine learning e IA generativa a problemi reali.</p>
+
+  <h2>In breve</h2>
+  <div class="highlight">
+    <div><b>10° su 378</b>ITSCyberGame 2026, classifica nazionale individuale</div>
+    <div><b>8° su 16</b>ITSCyberGame 2026, finale a squadre a Padova</div>
+    <div><b>603 test</b>e 30 release del mio progetto ZibaldOne</div>
+  </div>
+
+  <h2>Progetti pubblici</h2>
+  <div class="card">
+    <h3>AI 4 Restaurants</h3>
+    <div class="meta">Assistente vocale e chatbot per le prenotazioni di un ristorante · ITS, squadra di 4 · 2026</div>
+    <ul>
+      <li>Ho sviluppato il modulo vocale: riconoscimento vocale con faster-whisper, sintesi vocale con Piper, WebSocket, circa 4.800 righe e 190 test.</li>
+      <li>Ho coordinato il gruppo, introdotto Git e curato setup, rete LAN e documentazione.</li>
+    </ul>
+    <div class="tags"><span>Python</span><span>LLM locale</span><span>FastAPI</span><span>pytest</span><span>Docker</span></div>
+    <p><a class="repo" href="https://github.com/KsandarIV/AI_4_Restaurants">Vedi la repository →</a></p>
+  </div>
+  <div class="card">
+    <h3>ZibaldOne</h3>
+    <div class="meta">App personale "tutto in uno" a blocchi componibili · Windows e Android · 2026</div>
+    <ul>
+      <li>Fondata sulle 8 aree della vita (Personale, Salute, Finanze, Famiglia, Sociale, Lavoro, Studio, Svago): invece di un'app per ogni cosa, ognuno compone i propri strumenti da modelli pronti o da blocchi.</li>
+      <li>Local-first, con i dati cifrati sul dispositivo. In arrivo blocchi "intelligenti" con ML e IA generativa.</li>
+      <li>L'ho ideata e progettata e ne dirigo lo sviluppo, assistito da LLM: circa 30.000 righe di Python, 603 test, 30 release, 13 decisioni architetturali documentate, CI.</li>
+    </ul>
+    <div class="tags"><span>Python</span><span>SQLite</span><span>Flet</span><span>Crittografia</span><span>GitHub Actions</span></div>
+    <p><a class="repo" href="https://github.com/KsandarIV/Project-Two-Code">Vedi la repository →</a></p>
+  </div>
+  <p class="contacts">Altri progetti (analisi dati, classificazione di ticket con LLM, RAG) saranno pubblicati nei prossimi giorni.</p>
+
+  <h2>Competenze</h2>
+  <dl>
+    <dt>Dati e linguaggi</dt><dd>Python, pandas, NumPy, SQL, MongoDB, Excel, Jupyter</dd>
+    <dt>Analisi e machine learning</dt><dd>EDA, data cleaning, statistica descrittiva, data visualization, scikit-learn (classificazione, regressione, clustering, cross-validation), matplotlib, seaborn, Plotly, Streamlit</dd>
+    <dt>IA generativa</dt><dd>LLM, RAG (embedding, ChromaDB), agenti e tool calling</dd>
+    <dt>Strumenti e metodo</dt><dd>Git/GitHub, Linux/bash, Docker, pytest · Agile/Scrum, user stories, WBS, Gantt</dd>
+    <dt>Lingue</dt><dd>Italiano e bulgaro madrelingua · inglese B2 · francese B1 · spagnolo B1</dd>
+  </dl>
+
+  <h2>Formazione</h2>
+  <dl>
+    <dt>ITS Academy · Tecnico superiore in Data Science e Intelligenza Artificiale</dt><dd>Lazio Digital, Roma · nov 2025 – set 2027</dd>
+    <dt>Filosofia (triennale, non conclusa)</dt><dd>Università di Roma Tor Vergata · 2021 – 2025</dd>
+    <dt>Diploma di liceo linguistico</dt><dd>Liceo "Leonardo da Vinci", Maccarese · 2018</dd>
+  </dl>
+
+  <footer>Aggiornato a novembre 2026 · Per contatti: aleksandar_savov@yahoo.com</footer>
+</main>
+</body>
+</html>
