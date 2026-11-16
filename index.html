@@ -21,6 +21,7 @@
   .contacts a { color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--line); }
   .contacts { color: var(--muted); }
   h2 { font-size: .95rem; text-transform: uppercase; letter-spacing: 1.5px; color: var(--accent); border-bottom: 1.5px solid var(--accent); padding-bottom: 4px; margin: 40px 0 14px; }
+  .group { font-size: .85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: var(--muted); margin: 22px 0 10px; }
   .card { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 16px 18px; margin-bottom: 14px; }
   .card h3 { margin: 0 0 2px; font-size: 1.08rem; }
   .card .meta { color: var(--muted); font-size: .9rem; margin-bottom: 8px; }
@@ -59,6 +60,30 @@
   </div>
 
   <h2>Progetti pubblici</h2>
+  <h3 class="group">In corso</h3>
+  <div class="card">
+    <h3>Prezzi dei carburanti a Roma</h3>
+    <div class="meta">Progetto personale · dati aperti MIMIT · 2026</div>
+    <ul>
+      <li>Quanto costa fare rifornimento a Roma e da cosa dipende il prezzo? Analizzo i 946 distributori del comune dai dati aperti del Ministero.</li>
+      <li>Audit completato: z-score per i prezzi anomali, soglia di aggiornamento che riproduce l'indicatore della fonte, errori di coordinate e indirizzi verificati su Google Maps. Molti outlier si rivelano prezzi vecchi, non errori.</li>
+      <li>È la palestra per il progetto successivo: le stesse funzioni applicate all'archivio nazionale dei prezzi dal 2015 al 2026 (circa 7 GB).</li>
+    </ul>
+    <div class="tags"><span>Python</span><span>pandas</span><span>Plotly</span><span>Jupyter</span><span>Open data</span></div>
+    <p><a class="repo" href="https://github.com/KsandarIV/analisi-prezzi-carburanti-roma">Vedi la repository →</a></p>
+  </div>
+  <div class="card">
+    <h3>ZibaldOne</h3>
+    <div class="meta">App personale "tutto in uno" a blocchi componibili · Windows e Android · 2026</div>
+    <ul>
+      <li>Fondata sulle 8 aree della vita (Personale, Salute, Finanze, Famiglia, Sociale, Lavoro, Studio, Svago): invece di un'app per ogni cosa, ognuno compone i propri strumenti da modelli pronti o da blocchi.</li>
+      <li>Local-first, con i dati cifrati sul dispositivo. In arrivo blocchi "intelligenti" con ML e IA generativa.</li>
+      <li>L'ho ideata e progettata e ne dirigo lo sviluppo, assistito da LLM: circa 30.000 righe di Python, 603 test, 30 release, 13 decisioni architetturali documentate, CI.</li>
+    </ul>
+    <div class="tags"><span>Python</span><span>SQLite</span><span>Flet</span><span>Crittografia</span><span>GitHub Actions</span></div>
+    <p><a class="repo" href="https://github.com/KsandarIV/ZibaldOne">Vedi la repository →</a></p>
+  </div>
+  <h3 class="group">Conclusi</h3>
   <div class="card">
     <h3>Analisi dataset Kaggle: salari nel settore Data Science e IA</h3>
     <div class="meta">Esame di Data Science (Olidata) · ITS, lavoro individuale · 2026</div>
@@ -79,17 +104,6 @@
     </ul>
     <div class="tags"><span>Python</span><span>LLM locale</span><span>FastAPI</span><span>pytest</span><span>Docker</span></div>
     <p><a class="repo" href="https://github.com/KsandarIV/AI_4_Restaurants">Vedi la repository →</a></p>
-  </div>
-  <div class="card">
-    <h3>ZibaldOne</h3>
-    <div class="meta">App personale "tutto in uno" a blocchi componibili · Windows e Android · 2026</div>
-    <ul>
-      <li>Fondata sulle 8 aree della vita (Personale, Salute, Finanze, Famiglia, Sociale, Lavoro, Studio, Svago): invece di un'app per ogni cosa, ognuno compone i propri strumenti da modelli pronti o da blocchi.</li>
-      <li>Local-first, con i dati cifrati sul dispositivo. In arrivo blocchi "intelligenti" con ML e IA generativa.</li>
-      <li>L'ho ideata e progettata e ne dirigo lo sviluppo, assistito da LLM: circa 30.000 righe di Python, 603 test, 30 release, 13 decisioni architetturali documentate, CI.</li>
-    </ul>
-    <div class="tags"><span>Python</span><span>SQLite</span><span>Flet</span><span>Crittografia</span><span>GitHub Actions</span></div>
-    <p><a class="repo" href="https://github.com/KsandarIV/ZibaldOne">Vedi la repository →</a></p>
   </div>
   <div class="card">
     <h3>Progetti ITS e di studio</h3>
